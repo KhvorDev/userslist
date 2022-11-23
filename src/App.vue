@@ -62,6 +62,12 @@ export default {
       return list
     },
   },
+  watch:{
+    totalPages(){
+      this.$refs.UsersTable.returnOnFirstPage()
+    }
+  },
+
 
   methods: {
     showModal(userId) {
